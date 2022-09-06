@@ -1,0 +1,396 @@
+Dear Students, 
+
+This is Rajesh your Admin for this batch hope everyone is doing well. For course and fees related Queries contact me on WhatsApp chat only 7997997808.
+
+Dear Students, 
+Fill in the details given below along with payment screenshot or receipt:
+Full Name:
+Email ID:
+Contact no:
+Course Name:
+Batch Timings:
+Faculty Name:
+
+And send your payment screenshot to support@nareshit.com and 7997997808 (on WhatsApp) for payment confirmation.
+
+__________________________________
+
+Course: AWS
+Time: 7:30am
+Faculty: Mr.Avinash
+
+Course Fees without videos: ₹8000/-
+Course Fees with videos: 12000/-
+
+*Online student one time payment, No installments Please.*
+
+*Bank Details*
+Name: Naresh i Technologies
+A/C No. 50200022639833     
+Bank: HDFC
+A/C Type: Current Account
+IFSC Code: HDFC0001627
+MICR Code: 500240035
+Branch Code: 001627
+Branch:  Ameerpet
+
+Note: If you want to use Phonepe or Google Pay then follow the below steps.
+
+You can find the option Bank Transfer in Phonepe and Google pay. There you can enter our bank account number and you can transfer the amount.  Please mention your Name on the receipt and send a email once the payment is done to support@nareshit.com.
+  
+For any Queries, You can Reach us on email support@nareshit.com 
+
+Please share your feedback to Mr. Rajesh NIT Admin 
+
+Thanks and Regards
+Rajesh NIT Admin 7997997808
+
+
+________________________________________________________________________
+
+AWS @ 7:30 AM (IST) by Mr.Avinash
+Day-1: https://youtu.be/AKviWcujI7w
+Day-2: https://youtu.be/2NTBUXl2X6Q
+Day-3: https://youtu.be/Mk7BHG6i_iU
+Day-4: https://youtu.be/nE_n4Hk9LWI
+Day-5: https://youtu.be/Q6Whygv03i4
+Day-6: https://youtu.be/b4YHtSpckjk
+
+________________________________________________________________________
+
+Cloud comoputing : Dropbox.. GDrive..
+
+Laptop / Mobile : Uploading the data to GDrive/Dbox.. : We can access this data anywhere from the world.. (Internet) : Another user : Storage
+
+
+Cloud COmputing : COmputing resources : (Network, Storage, Servers, Database) : 
+Pay-as-you-go : Pay for the resources you actually used
+
+Server : 1 Hr : --> 1 Hr only
+GDrive : 100gb plan / 200 gb / 1 TB 
+
+Tenancy : 
+--> Shared : underlying h/w shared with another customers
+--> Dedicated : Underlying h/w won;t share with another cust.. Dedicated to same user.
+
+
+Physical Server : COmpatability 
+Virtual Server : Upgrade / Downgrade
+
+Core Infra Services : Compute, Storage, Network, Hosting, Database, IAM, Security, Application, Migration
+
+
+Email Server : Exchange Server : 
+Gmail : internet
+
+CAPEX : Capital Expendature : No Capital Expen : No Upfront : 
+OPEX : Operational Expendature : Less OPEX : 
+
+100 : small server : deliver
+10k : medium server : 
+100M : Large 
+
+Pay-as-you-go : 
+Pay-as-you-grow : 
+
+_______________________________________________________________________________________
+
+Service Models : SaaS, PaaS, IaaS
+Deployment Models : Public, Private, Community, Hybdrid
+
+________________________________________________________________________________________
+
+________________________________________________________________________________________
+
+
+
+Deployment models : 
+--> Public Cloud : Open for all.. ex: aws, azure, gcp, rackspace, ibm cloud..
+	Maintenance: Service Provider
+
+--> Private Cloud : Open for Individual organisation..	
+	Main : dedicated team of org / AMC to 3rd party org
+
+--> Community Cloud : Group of org, they build the infra and only they use the infra..
+	Main : dedicated team of one the org / AMC to 3rd party org
+
+--> Hybrid Cloud : Combination of one or more cloud platforms.. Ex: Onprem + aws / aws+ azure / aws +gcp.. Main : Depends on the infra.. 
+
+aws direct connect : Dedicated connection between local network to aws..
+VPN
+_________________________________________________________________________________
+
+
+Service Models of Cloud Computing : 
+
+Traditional Model : On-Premise : 
+
+Requirement : i n eed a webiste, need to work Anywhere from the world.
+--> SaaS : Lightsail
+--> PaaS : Beanstalk
+--> IaaS : ec2
+
+Build a website  and deliver to everyone..!!
+
+______________
+
+AWS Provides the Cloud Computing services. it offers Compute, Network, storage and Databse services on Pay-as-you-go. 
+
+2003 : Prepared documentation : Chris Pinkman and Benjamin Black
+2004 : SQS : Simple Queue Service 
+2006 - March : AWS Oficially Launched (s3, ec2, sqs)
+2012 : Annual Conference (AWS Re:Invent Nov-Dec)
+
+______________
+
+Security : Shared responsibility model for Security
+
+--> Security OF the Cloud : AWS Responsibility : DC, Physical security, Servers
+--> Security IN the Cloud : Customer Responsibility : Encryption, Mfa, Port restrictions.
+
+
+Global infrastructure : 
+How to create an AWS account
+IAM : Identity and Access management : Create users, Mange user access : least privilages mechanism
+S3 : Simple Storage Service : AWS Version of GDrive. (Storage classes/encrypt/versioning/lcr/crr)
+EC2 : Elastic compute cloud : Launch / run servers.. (windows launch & linux launch, storage, elb, asg, patching, management, groups, IAM role, cli)
+route53 : AWS DNS service : how to purchase domain, Map domain to aws resources, Routing.
+VPC : Virtual private cloud : Networking part.. (Ip address, public ip / private ip, subnet, cidr, VPC (public sn/private sn/vpn/tg/endpoints))
+RDS : Relational Database service : mysql/mssql/postgre/maria/aurora/oracle.. backup, HA, DR.. nosql/dynamodb, DAX, redshift, elasticache
+
+app services : cloud9, cdk, IaaC, Serverless (lambda), ECS (fargate), cicd
+
+__________________________________________________________________________________________
+
+
+AWS Global Infrastructure : 
+--> Regions : Geographical location / Physical location. Contains min of 2 AZs.. 
+26 Regions.. 
+Mumbai : ap-south-1 
+hyd : ap-south-2
+Nv : us-east-1
+
+--> AZs : one or more data centers with redundant power, network. With in Region. Eveny regions DC are interconnected each other with highend fiber connectivity for low latency.
+3 AZs in Mumbai : ap-south-1a, 1b & 1c
+Hyd : ap-south-2a, 2b & 2c
+
+--> PoP/Edge Locations : CDN (Content Delivery Network) Endpoint : Cached locations : 
+230+ edge locations across the globe.. : CLoudfront
+
+_______________________________________________________________________________________
+
+
+https://aws.amazon.com/free
+
+12 Months Free Tier Eligibility : 90% of the times we use Free tier limitation..!!
+
+S3: 5 gb Standard storage with 2000 PUT, 20k GET operation
+ec2 : 750 Hrs/Month for t2.micro windows & Linux (1500 Hrs)
+rds : 750 hrs/Month for db.t2.micro
+
+s3 : Simple Storage Service : Storage service in AWS : AWS Version of Google Drive / Dropbox : Bucket (Folder with Unique name)
+ec2 : Elastic Compute Cloud : Service to launch and run our Servers (Instances).. 
+Instance = Server
+VPC : Virtual Private Cloud : Service to configure the Network.. 
+RDS : Relational Database Service : Launch and run database.. (mysql, mssql, oracle)
+
+
+
+Root User : Email address to create AWS account : 
+
+Step 1 : Provide Email address, Password, Acocunt Name
+Step 2 : Provide Contact information : Personal : Name, Address
+Step 3 : Provide the Payment information : cc/dc : visa, mastercard, amex : 2 INR (refund)
+Step 4 : Verify the Identity : Phone / Email 
+	--> Enter the ph no and call me now.. XXXX --> Call from aws, Enter the pin
+Step 5 : Choose the Support Plan
+
+1). Account and Billing Related - 24x7 support
+2). Technical Support - Depends on SP
+
+--> Basic SP : Free, 1 & 2 Supports.. 7 COre area checks from AWS Trusted Advisor.. 
+No Technical Support.. Technical Support : AWS Developer Forum. AWS Knowledgebase articles, Re:post.. 
+
+--> Developer SP : Cost : 29$/Month.. 2 --> 12-24 Local Business hrs support from Cloud Support Associate.. 7 COre area checks from AWS Trusted Advisor.. 1 Primary contact / Unlimited tickets.. 
+General Guidance : < 24 Hrs
+System Impaired  : < 12 Hrs
+
+--> Business SP : 100$/Month.. 2 --> 24x7 phone, email and chat support from Cloud Support Engineer.. FUll AWS Trusted Advisor checks.. Unlimited users/unlimited tickets
+General Guidance : < 24 Hrs
+System Impaired  : < 12 Hrs
+Production system impaired : < 4 Hrs
+Production System Down : < 1 Hr
+
+--> Enterprise SP : 15,000$/Month.. 2 --> 24x7 phone, email and chat support from Sr. Cloud Support Engineer.. FUll AWS Trusted Advisor checks.. Unlimited users/unlimited tickets
+--> Annual Architectural and Operation Reviews From AWS
+--> Dedicated TAM (technical account  manager)
+General Guidance : < 24 Hrs
+System Impaired  : < 12 Hrs
+Production system impaired : < 4 Hrs
+Production System Down : < 1 Hr
+Business Critical System Down : < 15 Min
+
+
+AWS Login Console : aws.com  .. https://aws.amazon.com/console
+
+____________________________________________________________________________________
+
+How to enable MFA to root user.??
+
+root user : EMail used to create an AWS account, called root user. Root user have highest permissions/previlages on our aws account. 
+
+Email id and Password..!! --> 
+
+virtual MFA : Microsoft authenticator, Google authenticator, Authy2factor.. 
+Hardware MFA : Supported devices..!! 
+yuby2key (u2f) key : usb key, Connect this device to the laptop where you want to login 
+
+______
+
+IAM User Vs Root User
+
+IAM : Identity and Access Management : 
+
+Least Privilages Mechanism is suggested and we always follow.
+
+AdminUser : Full Access : 
+S3Admin : Manages Storage : S3 Full Access : 
+ec2admin : Manages Compute : ec2 Full Access : 
+
+IAM USer Creation : 
+
+Username : AdminUser
+
+Account type : 
+--> programatic Access : CLI : AccessKeyID and SecretAccessKey : aws cli, sdk, cdk, 3rd party app
+--> Management console access : GUI : Username, Pwd, Sign-In URL : Browser
+
+Permissions : AdministratorACcess
+--> Create/choose a Group, Add permissions to group, Add this user to group.
+--> Copy permissions from another user.
+--> Associate permissions directly to user
+
+Policy : Set of Permissions on our aws account. Policy writtens in JSON format.
+--> AWS Managed - Job Function
+--> AWS Managed Policy
+--> Customer Managed Policy
+
+
+Add Tags : 
+
+review and create IAM User : 
+
+
+Create a User Avinash_T Associate "AdminAccess", Same user for daily activities. 
+
+
+
+
+Support : 
+--> 1. Account and billing related issues/query
+--> 2. Technical issues
+
+Basic SP : Free.. 1 free 24x7 support.. 
+
+Developer SP : 29$/Month.. 1 free 24x7 support.. 2 --> 12-24 Local business hours support (8AM-8PM).. Cloud engineer.. Unlimited tickets / 1 user can raise ticket
+
+Business SP : 100$/Month.. 1 free 24x7 support.. 2 --> 24x7 support, Sr cloud engineer email/phone/chat support.. Unlimited tickets / any user can raise ticket.. Case seviarity : 1 hour.. 
+
+Enterprise SP : 15000$/month.. 1 --> free 24x7 support.. 2 --> 24x7 support, Sr cloud engineer email/phone/chat support.. Unlimited tickets / any user can raise ticket.. Case seviarity : 15 Minutes.. 
+AWS annual architectural and operational reviews.. TAM (Technical Account manager).. AWS trainings.. 
+
+
+Requirement : 
+
+
+IAM user with S3 Full Access : S3Admin :
+IAM user with EC2 Full Access : EC2Admin : 
+
+Policy ; Set of permissions on AWS env.. 
+
+
+IAM user with Admin access = root - acc management/changing sp
+
+Task ; Create an IAM user, provide him "AdministratorAccess".. Login as this user and verify his access on billing information.
+==> Provide billig information to the created user.
+
+
+Policy ; Document contains set of permissions on AWS environment. It writtens in JSON format. 
+
+
+AWS managed policy (Based on Service):
+AWS managed policy - JOb function (based on standard jobs in market) : 
+Customer managed Policy : 
+
+
+
+https://avinash.s3.amazonaws.com/demo.txt
+
+https://avinash.s3.amazonaws.com/aws.pdf
+
+
+phani@nareshit.com
+avizway@gmail.com
+
+
+
+________________________________
+
+Task : Activate MFA.
+
+Task 1 : Create an IAM User.. Allocate "AdministratorAccess" policy. Login as IAM user and verify his access on "Billing Dashboard". 
+*Provide billing access to an IAM user. 
+
+Password policy : 
+
+__________________
+
+Policy : Document contains set of permissions writtens in JSON format. Policy provide permissions on AWS resources for users/groups/roles.
+
+--> AWS Managed Policy : s3 (full, reaonly), ec2 (ec2read, moniroting, full)
+--> AWS Managed policy - Job Functions : Network Admin, Database Admin
+--> Customer Managed Policy : 
+
+Inline : Not a reusable policy. We can apply policy for specific resource.
+
+Requirement : IAM User required Full Access on AWS services, But not on "S3".
+
+**Deny always have highest privilages. If you all 100 times, but deny 1 times at any level, DENY will take effect. 
+
+S3 and EC2 Full Access As a single policy : 
+
+___________________________________________________________
+
+Task : Create a Policy to Activate MFA, if we associate this policy to an IAM user. 
+Task 1 : Create an IAM user and Provide "Administrator ACcess" and use same user throughout course.
+
+Credential report : Report related to user cred. 
+
+How to track IAM user activities..?
+Ans : CloudTrail. Enbled by defaultly. It stores last 90 days logs.
+
+Policy Simulator : https://policysim.aws.amazon.com/home/index.jsp?#users
+
+Permissions Boundary : Define maximum permissions for an IAM user. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
