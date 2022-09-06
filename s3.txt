@@ -1,3 +1,10 @@
+
+
+https://join.slack.com/t/awswithavinash/shared_invite/zt-1enowlggh-EYtYSywhCkpZjBXiCzL87A
+
+https://github.com/avizway1/sep2022
+
+
 _____________________________________________________________________________________
 
 S3 : Simple Storage Service : 
@@ -54,12 +61,12 @@ Task 2 : Create an s3 bucket, Upload an object, Make object public accesable.
 _______________________________________________________________________________
 
 
-GDrive : 100 gb plan				S3	: no pre provisioning req
+GDrive : 100 gb plan						S3	: no pre provisioning req
 
 20 gb Daily									S3-Standard
 20 gb Infreq 								Standard-IA / OneZOne-IA
-10 gb don't know when to access			Intelligent Tier
-20 gb unimp data / non critical			RRS (Redused redundancy storage)
+10 gb don't know when to access				Intelligent Tier
+20 gb unimp data / non critical				RRS (Redused redundancy storage)
 10 gb archive								Glacier / Glacier-DA
 
 30gb
@@ -121,7 +128,8 @@ _________
 
 Version : AWS maintains multiple copies in s3 bucket. 
 --> Defaultly versioning will be in Suspended state.
---> When versioning is enabled, If we delete an object
+
+--> When versioning is enabled on bucket, If we delete an object
 
 Versioning : HIDE
 --> S3 will show most recent uploaded object only / Current version objects.
@@ -130,7 +138,6 @@ Versioning : HIDE
 
 Versioning : SHOW
 --> If we delete an object, it deletes permanently.
-
 _____________________________________________________________________________________
 
 Life Cycle Management Rule : 
