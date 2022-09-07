@@ -153,6 +153,8 @@ S3 Standard --> Delete
 
 Task : Create a Life CYcle management rule to transit current version objects from s3 standard to Delete after 2 Days.
 Transit previous version objects to Delete after 1 Day. 
+
+
 ____________________
 
 CRR / SRR : 
@@ -171,7 +173,7 @@ aws s3 sync s3://source s3://target		==> 12:00AM   (task scheduler / cron job)
 _______________________
 
 Task : Create a bucket in mumbai, Configure Versioning. 
-Create anotheer bucker in Mumbai region only.. configure same region replication between these buckets.
+Create another bucker in Mumbai region only.. configure same region replication between these buckets.
 
 ___________________________________________________________________________________________________
 
@@ -191,11 +193,20 @@ http status codes :
 
 Task : Download a template from Internet. Deliver the webiste using s3- static webiste feature.
 
+___________________________________________
+
+IAM Task : One bucket one user task
+
+--> create an s3 bucket.
+Create an IAM user.. Allocate only created s3 bucket to this user. (put/get/list) 
+
+
+
+
 
 
 _____________________________________________________________________________________________________
 
-D: 13/07/2022
 
 --> In-Transit Encryption : 
 	SSL (Secure socket layer) / TLS (Transport layer secure)
