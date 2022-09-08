@@ -229,7 +229,7 @@ Encryption key generation :
 
 ____________________________________________________________________________
 
-Task : Create an IAM user, Restrict him to work only on "mumbai region". 
+Task : Create an IAM user, provide S3 full access. Restrict him to work only on "mumbai region". 
 
 Task 2 : Enable Encryption on s3 bucket and test it. (SSE-S3/AWS Managed key)
 
