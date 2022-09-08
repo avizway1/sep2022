@@ -200,12 +200,9 @@ IAM Task : One bucket one user task
 --> create an s3 bucket.
 Create an IAM user.. Allocate only created s3 bucket to this user. (put/get/list) 
 
-
-
-
-
-
 _____________________________________________________________________________________________________
+
+D: 08/09/2022
 
 
 --> In-Transit Encryption : 
@@ -232,6 +229,13 @@ Encryption key generation :
 
 ____________________________________________________________________________
 
+Task : Create an IAM user, Restrict him to work only on "mumbai region". 
+
+Task 2 : Enable Encryption on s3 bucket and test it. (SSE-S3/AWS Managed key)
+
+
+___________________________________________________________________________
+
 
 Server access logging : enable logging on bucket.
 
@@ -254,7 +258,11 @@ ____________
 
 Task : Create an S3 Bucket, Create an SNS topic add a subscriber.. Configure Events on s3 to trigger an email when Object creation and deletion happend.
 
-Task 2 : Enable Encryption on s3 bucket and test it. (SSE-S3/AWS Managed key)
+
+
+
+
+
 
 _______________________________________________________________________________
 
