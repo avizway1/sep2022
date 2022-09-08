@@ -307,9 +307,6 @@ Use more prefixes
 
 ________________________________________________________________________________________
 
-D: 18/07/2022
-
-Slack link : https://join.slack.com/t/awswithavinash/shared_invite/zt-1cpazg8cj-mlHcmTsaXbJGW2xa3q0MaA
 
 
 Pricing : https://calculator.aws/
@@ -364,6 +361,6 @@ Site-to-site VPN :
 
 
 
-Slack : https://join.slack.com/t/awswithavinash/shared_invite/zt-1cpazg8cj-mlHcmTsaXbJGW2xa3q0MaA
+
 
 
