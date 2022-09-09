@@ -258,12 +258,6 @@ ____________
 
 Task : Create an S3 Bucket, Create an SNS topic add a subscriber.. Configure Events on s3 to trigger an email when Object creation and deletion happend.
 
-
-
-
-
-
-
 _______________________________________________________________________________
 
 Requirement : IAM user has its s3 bucket, he need to get access on his own bucket. : IAM Policy
@@ -285,6 +279,15 @@ Bucket level : arn:aws:s3:::avinash.bucket
 https://docs.aws.amazon.com/AmazonS3/latest/userguide/example-bucket-policies.html#example-bucket-policies-use-case-3
 
 ___________________
+
+Task : Try to access s3 using 3rd party applications. (S3 browser, Cyberduck, Cloudberry explorer, winscp)
+
+Task 2 : What is presigned URL. Configure an object to generate a presign url to expire after 60 sec.
+
+Task 3 : Complete the one bucket task / Region restriction / MFA task.
+
+Task 4 : Create an IAM user.. Provide him S3FullAccess.. But on a specific bucket Deny him to perform "DeleteObject, DeleteBucket, PutObject, getbucketpolicy"
+____________________
 
 
 Requester pays : the requester pays for requests and data transfer costs, and anonymous access to this bucket is disabled. Instead of bucket owner data requester need to pay for the data transfer & request.
