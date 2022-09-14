@@ -141,6 +141,11 @@ FREE TIER : 750 Hrs/Month t2.micro windows instance (ondemand)
 _________________________________________________________________________________________
 
 
+Task : Connect to Linux instance. Get familiar with Instance launch process.
+
+
+
+
 
 whoami		--> tells us as what user we are working.
 sudo		--> allow user to execute the command with root level permissions
