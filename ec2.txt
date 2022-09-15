@@ -143,7 +143,7 @@ ________________________________________________________________________________
 
 Task : Connect to Linux instance. Get familiar with Instance launch process.
 
-
+chmod 400 keypair ==> Works only in Linux. For windows use Github option. 
 
 
 
@@ -195,6 +195,8 @@ chkconfig httpd on				--> Makes httpd as logon service.
 path : /var/www/html/
 
 cd /var/www/html/
+
+vim index.html --> write some info (<h1>This is my first webpage</h1>)
 
 Tool to Move the files to amazon linux ec2 instance : WinSCP
 
