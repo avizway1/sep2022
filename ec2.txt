@@ -365,6 +365,160 @@ Step 4 : Grab the entry information from /etc/mtab file
 
 Step 5 : Edit the "/etc/fstab" file and write the information grabbed from "/etc/mtab" file.
 
+________________________________________________________________________________________________________
+
+D: 19/09/2022
+
+Instance 1 in ap-south-1a ---> Instance 2 in ap-south-1a ==> Detach from instance 1 and attach to instance 2.. 
+
+Instance 1 in ap-south-1a ---> Instance 2 in ap-south-1b ==> Detach from instance 1 and attach to instance 2 is not possible as both are running in diff AZs.. 
+Choose the volume --> Take a Snapshot --> Create a volume from snapshot, while creating choose ap-south-1b --> we'll get volume in 1b --> Attach to Instance 2 running in ap-south-1b
+
+Instance 1 in Mumbai : ap-south-1a ---> Instance 2 in N Virginia : us-east-1a ==> Detach from instance 1 and attach to instance 2 is not possible as both are running in diff regions.. 
+Choose the volume --> Take a Snapshot --> Copy the snapshot to desired region (NV) 
+--> Create a volume, while creating choose us-east-1a --> volume in 1a --> Attach to Instance 2 running in N Virginia : us-east-1a.
+(Data transfer from region to region cost us)
+
+
+Instance 1 in AWSACC1 : Mumbai : ap-south-1a ---> Instance 2 in AWSACC2 : Mumbai : ap-south-1a ==> Detach from instance 1 and attach to instance 2 is not possible as both are running in diff aws accounts, regions.. 
+Choose the volume --> Take a Snapshot --> share the snapshot to another aws account 
+--> Create a volume, while creating choose ap-south-1a in acc2
+
+Instance 1 volume need to share with everyone.. --> Create a snapshot --> Share to "Public" --> 
+
+
+MultiAttach : https://www.youtube.com/watch?v=2j8R3ajSo3s
+
+** We cannot decrease the size of an EBS volume. Only increase is possible.
+EBS VOlumes : Always use EBS volumes only.
+Instance store volumes : We really don't use this in real environments.   (NO FREE TIER ELIGIBILTY)
+	--> Also called as Ephemeral storages (Temporary storage).
+	--> We cannot STOP/Start the instance.
+	--> Storage will be delivered from underlying host/physical resources.
+	--> If required, we can reboot. We don't loss any data.
+	--> If underlying h/w failure happens, we'll loss all the data.
+
+Snapshot : Backup copy of an EBS volume.
+
+https://aws.amazon.com/blogs/storage/automating-amazon-ebs-snapshot-and-ami-management-using-amazon-dlm/
+
+SOP : Standard Operational Procedure : 
+
+DLM : Data Lifecycle manager : Automate the snapshot creation process. 
+--> We use "tags" to filter the resources. 
+
+Default Retention Values: 
+Prod : 7 Days
+Non Prod : 2 Days 
+
+Fast snapshot restore : Enable fast snapshot restore to ensure that volumes created from snapshots created by this policy instantly deliver all of their provisioned performance.
+
+--> Snapshots are point-in-time copies.
+--> Snapshots stores in S3 platform (Not in your s3).
+--> Can we view what data we have inside snapshots..?? NO
+--> Snapshot Works with Incremental backup mechanism. 
+--> If our volume is Encrypted, Snapshot also Encrypts automaticALLY. 
+--> When we are launching a volume from encrypted snapshot, volume also encrypts automatically.
+--> We cannot share an Default Master key Encrypted snapshot.
+--> If we are using Custom encryption key, we can share snapshot with another aws account, but we need to provide permissions on encryption key also to another aws account.
+
+__________
+
+Task 1 : https://aws.amazon.com/blogs/storage/automating-amazon-ebs-snapshot-and-ami-management-using-amazon-dlm/
+
+Task 2 : Launch an ec2 instance in ap-south-1a.. Create a "New volume with 1 gb size" in ap-south-1a and attach this volume to ec2 instance and make it available. Goto AWS console "Increase the volume size to 2 GB", make this 2gb volume available at OS level.
+
+Task 3 : Launch Another ec2 instance in ap-south-1b..
+Get the 2gb volume data from instance 1a to newly launch 1b ec2 instance.. Make Same volume available to "1b instance"..!!
+
+______________________________________________________________________________________
+
+
+
+
+
+
+Scenario : 10 ec2 instances.. AV, MS Office, Custom WP, CUstom OS users, Applications, IIS.. 
+
+--> Launching 10 instance : connect to 10 instance and install everything in all 10 instance.. 
+--> 1 ec2 instance : Install everything.. : Keep it as Image : --> Launch "n" number using image..
+
+Client : OS with CIS Benchmarks (Center for Internet Security) : 
+
+*** GoldenAMI = CUstomized AMI.. Won't work with keypairs.. We need to change the password.. 
+
+Ec2 instance , Perform customizations --> Create a Golden AMI --> From GAMI we can launch n num of ec2 instance.. 
+
+Similar to Snapshots..
+
+--> We can launch another instance in same region using GAMI.
+--> We can copy Region 1 GAMI to Region 2, And launch an ec2 instance in Region 2. 
+--> We can share GAMI from Acc 1 to Acc 2. 
+--> We can share GAMI to public.
+
+______________________________________
+
+Task : Launch a windows ec2 instance, make it as "Web Server", Test the "Security groups" and deliver custom webpage.
+
+Task 2 : Perform some more customisations on the task 1 instance and make it as GoldemAMI , Launch instance from GAMI and Test we got all the customisations or not..!!!!!!
+
+Task 3 : Launch Linux ec2 instance, Make it as webserver.. Add custom webpage.. Create a Golden AMI and Launch instance from GAMI and test output. 
+
+_________________________________________________________________________________________
+
+
+https://d0.awsstatic.com/whitepapers/Security/Security_Compute_Services_Whitepaper.pdf
+
+EIP : Elastic IP Address : Dedicated IP address we will get from AWS. We can associate this to an ec2 instance. When Instance is STOP/START, this IP won't change.
+(COST US : NO FREE TIER ELIGIBILITY, EVEN if you generated kept it idle)
+
+
+ENI : Elastic Network Interface : NIC CARD for Instance.. : 
+--> EC2 instance and ENI should be in same AZ.
+
+Virtulisations : 
+
+Host Based Hypervisor
+Bare metal Hypervisor 
+
+______________
+
+Tenancy in AWS : 
+--> Shared Tenancy : Underlying hardware/resources will be shared with multiple AWS customers. 
+--> Dedicated Tenancy : Underlying hardware/resources will dedicatedly available to only one AWS customer. It won't share with any other.
+	--> Dedicated Instance : 
+	--> Dedicated Host : Host supports to launch multiple instances. Some applications required physical resources inforamtion to apply the licenses. 
+____________
+
+
+--> Shared security responsibility model
+Security OF the Cloud : Physical infra, hardware, Physical security/Access : AWS
+Security IN the cloud : OS Patching, Firewall, Application level security : Customer
+__________________
+
+RDP : 3389
+SSH : 22
+http : 80
+https : 443
+mssql : 1433
+Mysql : 3306
+
+--> We can have 5 SGs for an EC2 Instance. 
+--> Wecan have 60 inbound and 60 outbound rules per security group (making a total of 120 rules)
+
+http://localhost/ or http://127.0.0.1/
+
+** Security Groups : http / https traffic.. 
+--> CHanges to the Security group takes effect immedeately. (No need to stop/start the instance). 
+--> Security group won't support DENY. It allow the traffic. 
+--> Security groups are stateful. We need to take care about INBOUND RULES only. 
+--> All the Outbound traffic is allowed for every security groups. 
+
+__________________
+
+Whenever we launch an ec2 instance, 2 status checks will happen. 
+-> System Status check : H/w is healtlhy or not at Physical resource level. (STOP/START)
+-> Instane status check : OS level issues.
 
 
 
