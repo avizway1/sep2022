@@ -616,13 +616,11 @@ Amazon linux 2 AMi ID : ami-079b5e5b3971bd10d
 
 
 Task 3 : Create an Alarm on your ec2 instance, If CPU utilisation is below 20% for 10 min. Configure to terminate the instance and configure to get alert to your email.
-
-
-
-
 ________________________________________________________________________________________
 
-ASG : Auto Scaling Group : 
+D: 24/09/2022
+
+ASG : Auto Scaling Group :
 
 --> DYnamic (Step/Simple) Load 
 --> Scheduled scaling : 
@@ -670,7 +668,7 @@ ________
 
 _______________________________________________________________________________________
 
-
+D: 26/09/2022
 
 Userdata : We can pass commands to our ec2 instance, it executes when we launch instances for the first time. 
 
@@ -678,6 +676,7 @@ curl http://169.254.169.254/latest/user-data/
 
 Linux : #!/bin/bash
 
+#!/bin/bash
 yum install httpd -y
 service httpd start
 chkconfig httpd on
@@ -720,7 +719,40 @@ reservation-id
 security-groups
 services/
 
+_______________________________________________________________________________________
 
+
+EFS : Elastic File System : File Share : Shared Storage solution for Multiple ec2 instances. : 
+--> Network File System : NFS v4.1 : Port 2049
+--> Support only Linux OS 
+--> No Pre Provisioning required.
+--> Add entry in "/etc/fstab" file.  Get entry info from "/etc/mtab" file
+
+mkdir server1
+
+sudo mount -t nfs4 -o nfsvers=4.1,rsize=1048576,wsize=1048576,hard,timeo=600,retrans=2,noresvport fs-0ea572ad05271eefd.efs.ap-south-1.amazonaws.com:/ server1
+
+sudo mount -t nfs4 -o nfsvers=4.1,rsize=1048576,wsize=1048576,hard,timeo=600,retrans=2,noresvport fs-0ea572ad05271eefd.efs.ap-south-1.amazonaws.com:/ server2
+
+sudo mount -t nfs4 -o nfsvers=4.1,rsize=1048576,wsize=1048576,hard,timeo=600,retrans=2,noresvport fs-0ea572ad05271eefd.efs.ap-south-1.amazonaws.com:/ /var/www/html/
+
+
+Task : Create EFS and Mount it to multiple ec2 instances. Deliver Web Content to both the instances from EFS.
+
+_______________________________________________________________________________________
+
+Platform : Windows
+Platform : Linux
+
+Naming Standards : Wi-wt-ad-p : 
+		: Li-ap2-c1-s : 
+wi : Windows
+li : Linux
+wt : app code, tw : app code
+c1/c2 : Client id 
+s : Staging / NonProd
+u : uat 
+p : production
 
 
 
