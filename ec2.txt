@@ -846,7 +846,11 @@ PG :
 --> partition PG
 --> Spread PG
 
+_____
 
+Instance Store volumes / Ephemeral Storage: 
+
+Eventbridge : 
 
  
 
