@@ -149,8 +149,9 @@ PublicRoute : We need to associate InternetGateway.
 PrivateRoute without internet : Don't add NAT.
 PrivateRoute With Intenet : Create NAT Gateway and add NAT Gateway.
 
+______________________________________________________________________________________________________
 
-_________________
+D: 07/10/2022
 
 
 VPC NAT Gateway (NO FREE TIER ELIGIBILITY): Is designed to provide Internet to private Subnet resources. NAT always runs in custom VPCs public subnet. We need to generate an EIP (Elastic IP). 
