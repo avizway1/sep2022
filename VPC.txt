@@ -214,10 +214,10 @@ VPC Peering : Allow us to enable communication between multiple VPCs. (Same regi
 --> VPC Peering is non transitive peering. 
 --> Update both the VPCs route tables with Another VPC CIDR blocks via Peering connection. 
 
-			Requester VPC (mumbai)				Accepeter VPC (Singapore)
-VPC CIDR	192.168.0.0/24						172.31.0.0/16
-VPC ID		vpc-08a860070048bfe4b				vpc-51dd1137
-Region		ap-south-1							ap-southeast-1
+			Requester VPC (mumbai)				Accepeter VPC (N V)
+VPC CIDR	10.0.0.0/16							172.31.0.0/16
+VPC ID		vpc-09689ca02c81d9bbd				vpc-5fc95922
+Region		ap-south-1							us-east-1
 ACC ID		501170964283						501170964283
 
 
@@ -226,3 +226,4 @@ ACC ID		501170964283						501170964283
 VPN Connectivity (openvpn): https://www.youtube.com/watch?v=JSTyjISscNg
 Transit Gateway : https://www.youtube.com/watch?v=xyLlMBHy2wc
 
+https://aws.amazon.com/blogs/apn/connecting-applications-securely-to-a-mongodb-atlas-data-plane-with-aws-privatelink/
