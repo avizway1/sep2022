@@ -90,14 +90,9 @@ Task 2 : Launch an amazon linux 2 ec2 instance, Install mysql workbench tool in 
 
 Task 3 : Import the shared sample db to mysql db. 
 
-
-
-
-
-
-
 _________________________________________________________________________________________
 
+D: 11/10/2022
 
 MultiAZ Deployment : Designed for Failover/FT purpose. : Creates a standby in a different Availability Zone (AZ) to provide data redundancy, eliminate I/O freezes, and minimize latency spikes during system backups.
 
@@ -142,8 +137,6 @@ Restore to point in time : You are creating a new DB instance from a source DB i
 ___
 
 Task 1 : Create environment as mentioned in "VPC1.png"
-
-Task 2 ; Restore the Shared sample db to Launch mysql rds cluster.
 
 Task 2 : https://aws.amazon.com/getting-started/hands-on/amazon-efs-backup-and-restore-using-aws-backup/?trk=gs_card
 
