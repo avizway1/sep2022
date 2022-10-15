@@ -142,10 +142,9 @@ Task 2 : https://aws.amazon.com/getting-started/hands-on/amazon-efs-backup-and-r
 
 Task 3 : https://aws.amazon.com/getting-started/hands-on/amazon-ebs-backup-and-restore-using-aws-backup/?trk=gs_card
 
-
 ____________________________________________________________________________________
 
-
+D: 12/10/2022
 
 Aurora DB : No Free tier eligibility
 
@@ -174,6 +173,7 @@ address :
 	},
 }
 
+
 DAX : Dynamodb accelarator : in-Memory caching solution for DynamoDB.
 
 __________________
@@ -194,6 +194,7 @@ https://aws.amazon.com/getting-started/hands-on/create-nosql-table/
 
 Task : https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/TicTacToe.html
 
+
 ________________
 
 Task : launch an rds mysql db instance-1.. Now export/restore the shared db... 
@@ -211,18 +212,34 @@ _________________
 
 TASK 2 : https://aws.amazon.com/getting-started/hands-on/deploy-wordpress-with-amazon-rds/
 
-Task 5 : https://aws.amazon.com/getting-started/hands-on/migrate-rdsmysql-to-auroramysql/?trk=gs_card (No free tier)
+Task 5 : https://aws.amazon.com/getting-started/hands-on/migrate-rdsmysql-to-auroramysql/?trk=gs_card 
+(No free tier)
 
 
 
+--> AWS have MongoDB compatibility database called : Amazon DocumentDB
+--> Amazon Neptune : Fast, reliable graph database
+--> AWS Datawarehouse solution : Amazon Redshift
+--> RDS In-memory caching solution : Elasticache (2 Open source : Memcached and redis)
 
 
+DMS : Database Migration Service : 
+--> Homogenious migration : mysql (on-prem) ==> DMS ==> mysql
+--> Heterogenious migration : Ibm DB2 ==> SCT (schema convertion tool) ==> DMS ==> Mysql
 
 
+Pre-Req : Launch Source db instance (have sample db) and target DB instance(no data/empty). Have both in Same VPC.
+
+Step 1 : Create a DMS cluster. dms.t2.micro
+Step 2 : Create a Source Endpoint. (source db cluster endpoint, Username, Pwd, VPC) and run a test connection with DMS cluster.
+Step 3 : Create a Target Endpoint. (Target db cluster endpoint, Username, Pwd, VPC) and run a test connection with DMS cluster.
+Step 4 : Create a Migration task. (onetime replciation, one time full replication and ongoing changes replication, Replicate only data changes)
 
 
-
-
+Hybrid : 
+--> Site-to-site VPN
+--> VPN connectivity with 3rd party appliances
+--> AWS Direct Connect
 
 
 
