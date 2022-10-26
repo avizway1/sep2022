@@ -96,7 +96,7 @@ Task : With shared code, perform CICD deployment.
 
 https://www.youtube.com/watch?v=rtI26X6FJX0&list=PLneBjIzDLECkdgoinrTO7D519zgPEmcte
 
-________________
+_________________________________________________________________________________________
 
 ECR : Elastic Containers Repository : Place to store container images.
 ECS : Elastic Container Service : 
@@ -121,7 +121,7 @@ Task Defination : Task definitions specify the container information for your ap
 
 4. none — The task has no external network connectivity.
 
-https://ecsworkshop.com/
+** https://ecsworkshop.com/
 https://eksworkshop.com/
 https://www.youtube.com/containersfromthecouch
 https://kodekloud.com/courses/docker-for-the-absolute-beginner/
